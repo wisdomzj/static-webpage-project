@@ -1,0 +1,113 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+section.sc-content {
+  margin-top: 30px;
+}
+section.sc-content .wrapper {
+  background: #ffffff;
+  padding: 20px;
+}
+section.sc-content .wrapper .article-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+section.sc-content .wrapper .article-container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+section.sc-content .wrapper .article-container .content h2 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+section.sc-content .wrapper .article-container .content .detail-content {
+  color: #848484;
+  max-height: 160px;
+  font-size: 16px;
+  overflow: auto;
+  line-height: 1.75;
+}
+section.sc-content .wrapper .article-container .content .sign-up {
+  display: inline-block;
+  width: 100px;
+  height: 32px;
+  border: 1px solid #0086f9;
+  border-radius: 2px;
+  background: #0086f9;
+  color: #f8fcff;
+  text-align: center;
+  line-height: 32px;
+}

@@ -1,0 +1,180 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.container .banner.h412 .swiper-pagination {
+  bottom: 70px;
+}
+.sc-content .wrapper .verify {
+  box-shadow: #e1e1e1 0px 0px 8px;
+}
+.sc-content .wrapper .verify .verify-title {
+  margin-top: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+.sc-content .wrapper .verify .verify-title ul {
+  text-align: center;
+  padding: 40px 0;
+  line-height: 50px;
+}
+.sc-content .wrapper .verify .verify-title ul > li {
+  text-align: left;
+  width: 236px;
+  height: 54px;
+  background: url(../img/schedule-noactive-bg.png) no-repeat center;
+  background-size: cover;
+  margin-right: 30px;
+  display: inline-block;
+}
+.sc-content .wrapper .verify .verify-title ul > li h2.title-index {
+  font-weight: 600;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  border-radius: 50%;
+  background: transparent;
+}
+.sc-content .wrapper .verify .verify-title ul > li h2.title-index.active {
+  color: white;
+  background: #007ef9;
+}
+.sc-content .wrapper .verify .verify-title ul > li p {
+  display: inline-block;
+  text-indent: 20px;
+  line-height: 54px;
+}
+.sc-content .wrapper .verify .verify-title ul > li.active {
+  color: #fff;
+  background: url(../img/schedule-active-bg.png) no-repeat center;
+  background-size: cover;
+}
+.sc-content .wrapper .verify .verify-content .verify-box {
+  padding-bottom: 50px;
+}
+.sc-content .wrapper .verify .verify-content .verify-box .verify-prompt {
+  padding: 50px 0;
+  font-weight: 600;
+  text-indent: 1px;
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-align: center;
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers {
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  height: 300px;
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li {
+  position: absolute;
+  box-shadow: #c4dff3 0px 0px 3px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li img {
+  padding: 50px 0;
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li p {
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li.active,
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li:hover {
+  box-shadow: #b3d6ff 0px 0px 8px;
+  border: 1px solid #b3d6ff;
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li:first-of-type {
+  left: 250px;
+}
+.sc-content .wrapper .verify .verify-content .verify-box ul.service-providers > li:last-of-type {
+  right: 250px;
+}
+.sc-content .wrapper .verify .verify-content .verify-box .verify-btn {
+  display: block;
+  width: 145px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #007ef9;
+  line-height: 40px;
+  box-shadow: #e1e1e1 0 3px 3px;
+  border-radius: 5px;
+  margin: 0 auto;
+}

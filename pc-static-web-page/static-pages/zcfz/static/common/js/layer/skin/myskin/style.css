@@ -1,0 +1,533 @@
+@charset "utf-8";
+html {
+    font: normal 16px/1.25 "microsoft yahei","simsun";
+}
+/*新增的全局样式*/
+button{
+	outline: none;
+	cursor: pointer;
+}
+/*新增的全局样式 end*/
+
+.mask.hide{
+	display: none;
+}
+.mask{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.65);
+	z-index: 99999;
+}
+.msg-box{
+	/*position: absolute;*/
+	/*left: 50%;
+	top: 50%;*/
+	min-width: 320px;
+	min-height: 200px;
+	background: white;
+	border-radius: 6px;
+	border: solid 1px #E0E0E0;
+	/*-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);*/
+}
+.layui-layer.msg-box{
+	border-radius: 6px;
+	border: solid 1px #E0E0E0;
+	color: #141414;
+	/*-webkit-transform:none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;*/
+}
+
+.msg-box.notit .layui-layer-title{
+	display: none;
+}
+
+.msg-box .ta-box{
+	padding: 10px !important;
+}
+.msg-box textarea{
+	height: 106px;
+	width: 100%;
+	box-sizing: border-box;
+	margin:0;
+	outline: none;
+	border: 0;
+	resize:none;
+    font: normal 16px/1.25 "microsoft yahei","simsun";
+}
+/*弹框标题*/
+.msg-box .layui-layer-title,
+.msg-box>.box-header{
+	margin: 0 20px;
+	line-height: 59px;
+	height: 59px;
+	font-size: 20px;
+	color: #666;
+	text-align: center;
+	border-bottom: dashed 1px #E0E0E0;
+}
+/*弹框标题 end*/
+
+/*弹框按钮*/
+.msg-box .layui-layer-content>.buttons,
+.msg-box form>.buttons,
+.msg-box>.buttons{
+	padding: 30px 0;
+	font-size: 0;
+	text-align: center;
+}
+.msg-box .layui-layer-content>.buttons .button,
+.msg-box form>.buttons .button,
+.msg-box>.buttons .button{
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0 12px;
+	min-width: 70px;
+	font: inherit;
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	color: #141414;
+	text-align: center;
+	border: solid 1px #bbb;
+	background: white;
+	border-radius: 6px;
+	outline: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.msg-box .layui-layer-content>.buttons .button:hover,
+.msg-box form>.buttons .button:hover,
+.msg-box>.buttons .button:hover{
+	color: #D6000F;
+	border-color: #D6000F;
+}
+.msg-box .layui-layer-content>.buttons .button.primary,
+.msg-box form>.buttons .button.primary,
+.msg-box>.buttons .button.primary{
+	background: #D6000F;
+	border-color: #D6000F;
+	color: white;
+}
+
+/*弹框按钮 end*/
+/*常规的弹框文本*/
+.msg-box .layui-layer-content>.content-text,
+.msg-box>.content-text{
+	max-width: 280px;
+	padding: 8px 32px;
+	margin-top: 48px;
+	text-align: center;
+}
+.msg-box .layui-layer-content>.content-text>span,
+.msg-box>.content-text>span{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.msg-box .layui-layer-content>.box-header+.content-text,
+.msg-box>.box-header+.content-text{
+	margin-top: 24px;
+}
+/*常规的弹框文本 end*/
+
+/*弹框表单相关*/
+.msg-box .layui-layer-title+.layui-layer-content>.form,
+.msg-box>.box-header+.form{
+	margin-top: 24px;
+}
+.msg-box .form{
+	padding: 12px 20px;
+}
+.msg-box .form .line{
+	text-align: center;
+	white-space: nowrap;
+}
+.msg-box .form .line.mt10{
+	margin-top: 10px;
+}
+.msg-box .form .line>div{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+}
+.msg-box .form .line .left-text{
+	text-align: right;
+	margin-right: 12px;
+	line-height: 36px;
+	min-width: 6em;
+	text-align: right;
+	font-size: 16px;
+}
+.msg-box .form .line .input-box{
+	min-width: 120px;
+	padding: 0 10px;
+	margin-right: 48px;
+	background: white;
+	border: solid 1px #ccc;
+	font-size: 16px;
+	position: relative;
+}
+
+.msg-box .form .line a.down-btn{
+	display: inline-block;
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	right: 0;
+	top:0;
+	font-size: 0;
+}
+.msg-box .form .line a.down-btn:before{
+	font-family: icon;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	content: "\E804";
+	color: #bbb;
+}
+.msg-box .form .line .input-box input[type=password],
+.msg-box .form .line .input-box input[type=text]{
+	width: 100%;
+	font: inherit;
+	line-height: 20px;
+	padding: 7px 0;
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;	
+}
+.msg-box .form  .textarea-box{
+	display: block;
+	margin-top: 10px;
+}
+.msg-box .form  .textarea-box>div{
+	display: inline-block;
+	vertical-align: top;
+}
+.msg-box .form  .textarea-box .input-box{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.msg-box .form  .textarea-box textarea{
+	width: 100%;
+	display: block;
+	height: 100%;
+	margin: 0;
+	border: 0;
+	outline: none;
+	height: 60px;
+	font: normal 16px/1.25 "microsoft yahei","simsun";
+	resize:none; 
+}
+.input-box.w300{
+	width: 280px;
+}
+
+/*弹框表单相关 end*/
+
+/*选择人员弹框*/
+.msg-box .form .line .box-right,
+.msg-box .form .line .box-left{
+	display: inline-block;
+	width: 278px;
+	vertical-align: top;
+	height: 330px;
+	border: solid 1px #e0e0e0;
+	border-radius: 6px;
+	margin: 0 8px;
+	background: #fafafa;
+	overflow: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.msg-box .form .line .tit-box{
+	display: block;
+	padding: 0;
+}
+.msg-box .form .line .right-tit,
+.msg-box .form .line .left-tit{
+	display: inline-block;
+	margin: 0 8px;
+	font-size: 16px;
+	line-height: 48px;
+	height: 48px;
+	width: 278px;
+	text-align: left;
+}
+.msg-box .form .line .box-right .clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+.msg-box .form .line .box-right .people{
+	margin:0;
+    padding: 0;
+}
+.msg-box .form .line .box-right .people li{
+	padding: 0 20px;
+	text-align: left;
+	display: block;
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+}
+.msg-box .form .line .box-right .people li:hover{
+	background: #e6e4ea;
+}
+/*选择人员弹框*/
+
+
+
+
+/*吐司*/
+/*保存成功*/
+.icon-success:before{
+	content: "\e625";
+	font-size: 24px;
+	color: #70b259;
+}
+.toast{
+	padding:0 30px;
+	border-radius: 6px;
+	background: #fafafa;
+	display: block;
+	position: fixed;
+	color: #787878;
+	bottom: 120px;
+	/*left: 50%;
+	transform: translate(-50% 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);*/
+	box-shadow: 0 0 4px 1px #ccc;
+	z-index: 1000;
+	
+}
+.toast i{
+	display: inline-block;
+	line-height: 54px;
+	height: 54px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.toast span{
+	line-height: 54px;
+	height: 54px;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: top;
+}
+/*保存成功end*/
+
+/*.layui-layer-hui{
+	background: none;
+}
+.layui-layer-dialog .layui-layer-content{
+	padding:0 30px;
+	border-radius: 6px;
+	background: #fafafa;
+	box-shadow: 0 0 4px 1px #ccc;
+	display: inline-block;
+	line-height: 54px;
+	height: 54px;
+	font-size: 18px;
+	color: #787878;
+}*/
+/*.layui-layer-dialog .layui-layer-content:before{
+    content: "\e625";
+    font-size: 24px;
+    color: #70b259;
+    font-family: icon;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 54px;
+    margin-right: 4px
+}*/
+/*.layui-layer-msg{
+	border: none;
+	min-width: auto;
+	width: auto;
+}
+.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+	position: static;
+	margin-top: 12px;
+	margin-right: 4px;
+}
+.layui-layer-ico {
+    background-image: url(icon.png);
+}*/
+/*吐司end*/
+
+
+
+/*单选树形结构*/
+.msg-box .input-box{
+	position: relative;
+}
+.msg-box .radio-box.dept{
+	position: absolute;
+	width: 100%;
+	top:34px;
+	left:0;
+	height: 234px;
+	display: block;
+	background: white;
+	z-index: 5;
+	box-shadow: 0 0 0 1px #ccc;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+
+/*发布服务弹框*/
+.mask .cover-box{
+	padding-left: 268px;
+	position: absolute;
+	width: 700px;
+	left: 50%;
+	margin-left: -350px;
+	top:50%;
+	height: 250px;
+	margin-top: -140px;
+	padding-top: 30px;
+}
+.mask .cover-box .xw-03{
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.mask .cover-box .text{
+	font-size: 26px;
+	color: white;
+	line-height: 1.8;
+	text-shadow: 1px 1px 5px #333;
+}
+.mask .cover-box .bd-btn {
+    margin-left: 0;
+    margin-top: 36px;
+    height: 44px;
+    display: block;
+    font-size: 16px;
+    line-height: 44px;
+    width: 98px;
+    box-shadow: 1px 1px 5px #333;
+}
+/*发布服务弹框end*/
+
+
+/*调整layer*/
+
+.layui-layer {
+	box-shadow: none;
+	border-radius: 6px;
+}
+.layui-layer-msg{
+	border:none;
+	box-shadow: 0 0 4px 1px #ccc;
+    min-width: auto;
+}
+.layui-layer-content{
+	/*height: auto !important;*/
+}
+.layer-anim {
+	/*-webkit-animation:none;
+	animation:none;*/
+}
+.layui-layer-title {
+	padding: 0 40px 0 40px;
+	color: #333;
+	overflow: hidden;
+	background: none;
+	border-radius: 2px 2px 0 0;
+	text-align: center;
+	border-bottom: dashed 1px #E0E0E0;
+    margin: 0 20px;
+    line-height: 59px;
+    height: 59px;
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+    border-bottom: dashed 1px #E0E0E0;
+}
+
+.layui-layer-btn {
+	text-align: center;
+}
+.layui-layer-btn a {
+	border: 1px solid #bbb;
+	background-color: #fff;
+}
+.layui-layer-btn .layui-layer-btn0 {
+	border-color: #D6000F;
+	background-color: #D6000F;
+}
+.layui-layer-prompt .layui-layer-input {
+	box-shadow: none;
+	outline: none;
+	
+}
+/*.layui-layer-msg{
+	background: none;
+}*/
+.layui-layer-page .layui-layer-content{
+	overflow: visible;
+}
+.layui-layer-btn a{
+	display: inline-block;
+	margin: 0 10px;
+	padding: 0 12px;
+	min-width: 70px;
+	font: inherit;
+	font-size: 16px;
+	line-height: 30px;
+	height: 30px;
+	color: #141414;
+	text-align: center;
+	border: solid 1px #bbb;
+	background: white;
+	border-radius: 6px;
+	outline: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.layui-layer-ico {
+    background-image: url(icon.png);
+}
+.layui-layer-close{
+	margin-top: 8px;
+}
+/*.layui-layer-loading .layui-layer-content {
+    width: 60px;
+    height: 24px;
+    background: url(loading-0.gif) no-repeat;
+}*/
+/*调整layere end*/
+
+/*图标*/
+.clear-btn {
+	background-image: url(../../../images/colse-btn.png);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: 11px 11px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+/*图标end*/

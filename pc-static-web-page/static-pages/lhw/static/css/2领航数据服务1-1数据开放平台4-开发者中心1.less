@@ -1,0 +1,133 @@
+@import "../common/css/var.less";
+
+.container {
+    .banner {
+        &.h412 .swiper-pagination{
+            bottom: 70px;
+        }
+    }
+}
+
+.sc-content {
+    .development{
+        text-align: center;
+        .dev-guide-box{
+            background: rgb(247, 251, 255);
+            .dev-guide{
+                margin-top: 20px;
+                height: 426px;
+                .guide-img-box {
+                    height: 185px;
+                    padding: 16px 20px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                h2.guide-title{
+                    display: inline-block;
+                    width: 455px;
+                    margin: 20px auto 30px;
+                    padding: 32px 16px; 
+                    text-indent: 5px;
+                    letter-spacing: 5px;
+                    font-size: 32px;
+                    font-weight: 600;
+                    background: url(../img/headline-decoration.png) no-repeat center;
+                    background-size: contain;
+                    background-position: -12px 24px;
+                }
+                
+                ul.guide-content{
+                    width: 1100px;
+                    padding: 0 50px 80px 50px;
+                    &>li{
+                        display: inline-block;
+                        margin-right: 106px;
+                        img{
+                            border-radius: 20px;
+                            box-sizing: border-box;
+                            border: 1px solid rgb(236, 245, 251);
+                            box-shadow: rgb(218, 236, 249) 0 2px 8px;
+                        }
+                        p{
+                            padding: 10px 0;
+                        }
+                    }
+                    &>li:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        
+        .dev-tools{
+            h2.tools-title{
+                padding: 80px 0;
+                img{
+                    width: 205px;
+                    height: 75px;
+                }
+            }
+            ul.tools-content{
+                width: 1100px;
+                padding: 0 50px 80px 50px;
+                font-size: 0;
+                &>li{
+                    box-sizing: border-box;
+                    border: 1px solid rgb(232, 232, 232);
+                    border-radius: 10px;
+                    display: inline-block;
+                    width: 240px;
+                    height: 240px;
+                    margin-right: 46px;
+                    a.tools-content-item {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        img{
+                            padding: 50px 0 10px 0;
+                        }
+                        h3{
+                            font-size: 18px;
+                            font-weight: 600;
+                            padding-bottom: 5px;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: @text-hint;
+                        }
+                    }
+                }
+                &>li:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.sc-api {
+    background: url(../img/banner/lh_kfzzx_bottom.png) no-repeat center;
+    height: 400px;
+    padding-bottom: 0 !important;
+    .dev-links {
+        position: absolute;
+        top: 50%;
+        left: 724px;
+        transform: translateY(-50%);
+        .dev-btn{
+            text-align: center;
+            font-weight: bold;
+            width: 150px;
+            height: 44px;
+            background: rgb(255, 155, 42);
+            display:inline-block;
+            line-height: 44px;
+            color: @text-white;
+            box-shadow:#b8b8b8 0 3px 3px;
+            border-radius: 4px;
+            margin-right: 24px;
+        }
+    }
+}

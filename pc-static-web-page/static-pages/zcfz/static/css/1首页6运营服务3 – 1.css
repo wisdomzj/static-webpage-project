@@ -1,0 +1,193 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.sc-operate {
+  padding-bottom: 0 !important;
+  background: url(../img/banner/banner_gywm.png) no-repeat center;
+  background-size: cover;
+  height: 220px;
+  color: #fff;
+}
+.sc-operate .wrapper {
+  position: relative;
+  height: 100%;
+}
+.sc-operate .wrapper h1 {
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.sc-content .content {
+  margin-top: 32px;
+  padding: 0 24px;
+  background: white;
+  overflow: hidden;
+}
+.sc-content .content .tab-con {
+  padding: 20px 0;
+}
+.sc-content .content .tab-con .tab-con-img {
+  margin: 0 auto;
+  width: 660px;
+  height: 64px;
+}
+.sc-content .content .tab-con .tab-con-img li {
+  float: left;
+  margin-left: 20px;
+  height: 64px;
+  width: 300px;
+  line-height: 64px;
+  color: #0086F9;
+  cursor: pointer;
+}
+.sc-content .content .tab-con .tab-con-img li span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 110px;
+}
+.sc-content .content .tab-con .tab-con-img li.pre-org {
+  background: url(../img/preorg-nocheckbg.png) no-repeat center;
+}
+.sc-content .content .tab-con .tab-con-img li.pre-org:hover,
+.sc-content .content .tab-con .tab-con-img li.pre-org.active {
+  background: url(../img/preorg-checkbg.png) no-repeat center;
+  color: #FFF3A5;
+}
+.sc-content .content .tab-con .tab-con-img li.check-org {
+  background: url(../img/checkorg-nocheckbg.png) no-repeat center;
+}
+.sc-content .content .tab-con .tab-con-img li.check-org:hover,
+.sc-content .content .tab-con .tab-con-img li.check-org.active {
+  background: url(../img/checkorg-checkbg.png) no-repeat center;
+  color: #FFF3A5;
+}
+.sc-content .content .expert-list {
+  margin-top: 10px;
+}
+.sc-content .content .expert-list td:first-child:after {
+  left: 0;
+}
+.sc-content .content .expert-list td:last-child:after {
+  right: 0;
+}
+.sc-content .content .expert-list table {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+.sc-content .content .expert-list table th {
+  padding: 12px 8px;
+  font-size: 18px;
+  color: #687f99;
+  white-space: nowrap;
+  background: #d6ecf7;
+}
+.sc-content .content .expert-list table td {
+  position: relative;
+  padding: 16px 20px;
+  white-space: nowrap;
+}
+.sc-content .content .expert-list table td.is-link,
+.sc-content .content .expert-list table td a:not(.btn) {
+  color: #4169dc;
+  cursor: pointer;
+}
+.sc-content .content .expert-list table td.is-link:hover,
+.sc-content .content .expert-list table td a:not(.btn):hover {
+  color: #6c8be4;
+}
+.sc-content .content .expert-list table td:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: dashed 1px #e0e0e0;
+}
+.sc-content .content .expert-list table td:first-child:after {
+  left: 24px;
+}
+.sc-content .content .expert-list table td:last-child:after {
+  right: 24px;
+}
+.sc-content .content .expert-list table td p {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  word-break: break-word;
+  text-align: left;
+}

@@ -1,0 +1,77 @@
+@import "../common/css/var.less";
+
+.banner {
+    &.h412 .swiper-pagination{
+        bottom: 70px;
+    }
+}
+
+.sc-content {
+    .managed-title {
+        padding: 80px 0 20px 0;
+        text-align: center;
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 18px;
+            text-indent: 18px;
+            padding-bottom: 10px;
+        }
+        p {
+            color: rgb(102, 102, 102);
+        }
+    }
+    .managed-content {
+        padding-bottom: 20px;
+        ul {
+            position: relative;
+            &>li.managed-item {
+                min-height: 300px;
+                max-height: 558px;
+                box-sizing: border-box;
+                border: 1px solid rgb(221, 221, 221);
+                border-radius: 12px;
+                vertical-align: top;
+                display: inline-block;
+                width: 385px;
+                margin-left: 15px;
+                .des-box {
+                    margin-bottom: 16px;
+                    color: @text-dark;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .des-title {
+                        padding: 8px 0;
+                    }
+                    .des-content-paragraph {
+                        line-height: 1.75;
+                    }
+                    .des-content-spot {
+                        line-height: 28px;
+                    }
+                }
+                .content-title {
+                    position: relative;
+                    line-height: 80px;
+                    font-weight: bold;
+                    background: rgb(0, 126, 249);
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                    text-align: center;
+                    color: @text-white;
+                    font-size: 22px;
+                }
+                .content-des {
+                    color: rgb(102, 102, 102);
+                    padding: 15px;
+                    border-bottom-left-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                }
+            }
+            &>li:first-of-type {
+                margin-left: 0;
+            }
+        }
+    }
+}

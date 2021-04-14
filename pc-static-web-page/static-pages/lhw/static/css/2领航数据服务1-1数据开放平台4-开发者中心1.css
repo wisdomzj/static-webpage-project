@@ -1,0 +1,191 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.container .banner.h412 .swiper-pagination {
+  bottom: 70px;
+}
+.sc-content .development {
+  text-align: center;
+}
+.sc-content .development .dev-guide-box {
+  background: #f7fbff;
+}
+.sc-content .development .dev-guide-box .dev-guide {
+  margin-top: 20px;
+  height: 426px;
+}
+.sc-content .development .dev-guide-box .dev-guide .guide-img-box {
+  height: 185px;
+  padding: 16px 20px;
+}
+.sc-content .development .dev-guide-box .dev-guide .guide-img-box img {
+  height: 100%;
+  width: 100%;
+}
+.sc-content .development .dev-guide-box .dev-guide h2.guide-title {
+  display: inline-block;
+  width: 455px;
+  margin: 20px auto 30px;
+  padding: 32px 16px;
+  text-indent: 5px;
+  letter-spacing: 5px;
+  font-size: 32px;
+  font-weight: 600;
+  background: url(../img/headline-decoration.png) no-repeat center;
+  background-size: contain;
+  background-position: -12px 24px;
+}
+.sc-content .development .dev-guide-box .dev-guide ul.guide-content {
+  width: 1100px;
+  padding: 0 50px 80px 50px;
+}
+.sc-content .development .dev-guide-box .dev-guide ul.guide-content > li {
+  display: inline-block;
+  margin-right: 106px;
+}
+.sc-content .development .dev-guide-box .dev-guide ul.guide-content > li img {
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ecf5fb;
+  box-shadow: #daecf9 0 2px 8px;
+}
+.sc-content .development .dev-guide-box .dev-guide ul.guide-content > li p {
+  padding: 10px 0;
+}
+.sc-content .development .dev-guide-box .dev-guide ul.guide-content > li:last-of-type {
+  margin-right: 0;
+}
+.sc-content .development .dev-tools h2.tools-title {
+  padding: 80px 0;
+}
+.sc-content .development .dev-tools h2.tools-title img {
+  width: 205px;
+  height: 75px;
+}
+.sc-content .development .dev-tools ul.tools-content {
+  width: 1100px;
+  padding: 0 50px 80px 50px;
+  font-size: 0;
+}
+.sc-content .development .dev-tools ul.tools-content > li {
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  margin-right: 46px;
+}
+.sc-content .development .dev-tools ul.tools-content > li a.tools-content-item {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.sc-content .development .dev-tools ul.tools-content > li a.tools-content-item img {
+  padding: 50px 0 10px 0;
+}
+.sc-content .development .dev-tools ul.tools-content > li a.tools-content-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.sc-content .development .dev-tools ul.tools-content > li a.tools-content-item p {
+  font-size: 14px;
+  color: #bbb;
+}
+.sc-content .development .dev-tools ul.tools-content > li:last-of-type {
+  margin-right: 0;
+}
+.sc-api {
+  background: url(../img/banner/lh_kfzzx_bottom.png) no-repeat center;
+  height: 400px;
+  padding-bottom: 0 !important;
+}
+.sc-api .dev-links {
+  position: absolute;
+  top: 50%;
+  left: 724px;
+  transform: translateY(-50%);
+}
+.sc-api .dev-links .dev-btn {
+  text-align: center;
+  font-weight: bold;
+  width: 150px;
+  height: 44px;
+  background: #ff9b2a;
+  display: inline-block;
+  line-height: 44px;
+  color: #fff;
+  box-shadow: #b8b8b8 0 3px 3px;
+  border-radius: 4px;
+  margin-right: 24px;
+}

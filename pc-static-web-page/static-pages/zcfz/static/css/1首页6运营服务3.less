@@ -1,0 +1,126 @@
+@import "../common/css/var.less";
+
+.sc-content {
+    .content{
+        margin-top: 32px;
+        padding: 0 24px;
+        background: white;
+        overflow: hidden;
+        .tab-con {
+            padding: 20px 0;
+            .tab-con-img {
+                margin: 0 auto;
+                width: 970px;
+                height: 64px;
+                li {
+                    float: left;
+                    margin-left: 20px; 
+                    height: 64px;
+                    width: 300px;
+                    line-height: 64px;
+                    color: #F61A1A;
+                    background: url(../img/prize-nocheckbg.png) no-repeat center;
+                    cursor: pointer;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-left: 100px;
+                    }
+                    &:hover,
+                    &.active {
+                        background: url(../img/prize-checkbg.png) no-repeat center;
+                        color: #FFF3A5;
+                    }
+                }
+            }
+        }
+        .choose-year {
+            margin-top: 10px;
+            .form {
+                float: right;
+                margin-right: 50px;
+            }
+        }
+        .expert-box {
+            .expert-list{
+                margin-top: 30px;
+                td:first-child:after{
+                    left: 0;
+                }
+                td:last-child:after{
+                    right: 0;
+                }
+
+                &:first-child {
+                    margin-top: 70px;
+                }
+
+                .winners {
+                    padding: 20px 0;
+                    height: 58px;
+                    width: 354px;
+                    margin: 0 auto;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                table{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    text-align: center;
+                    color: @text-normal;
+                    &.boder {
+                        border: 1px solid #FFCA81;
+                        border-radius: 8px;
+                    }
+                    th{
+                        padding: 12px 8px;
+                        font-size: 18px;
+                        color: #687f99;
+                        white-space: nowrap;
+                        background: #d6ecf7;
+                        &.yellow {
+                            background: #FFF7E6;
+                        }
+                    }
+                    td{
+                        position: relative;
+                        padding: 16px 20px;
+                        white-space: nowrap;
+                        &.is-link,
+                        a:not(.btn){
+                            color: @primary-color;
+                            cursor: pointer;
+                            &:hover{
+                                color: @primary-color-hover;
+                            }
+                        }
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            border-bottom: dashed 1px @border-color-base;
+                        }
+                        &:first-child:after{
+                            left: 24px;
+                        }
+                        &:last-child:after{
+                            right: 24px;
+                        }
+                        p{
+                            display: inline-block;
+                            white-space: normal;
+                            vertical-align: top;
+                            word-break: break-word;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

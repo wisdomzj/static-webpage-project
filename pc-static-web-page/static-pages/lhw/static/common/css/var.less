@@ -1,0 +1,186 @@
+@docWidth:1200px;
+@headerHeight:126px;
+@border-color-base:#e0e0e0;
+@text-dark:#333;
+@text-normal:#666;
+@text-light:#999;
+@text-hint:#bbb;
+@text-white: #fff;
+@primary-color:#4169dc;
+@primary-color-hover:lighten(@primary-color,10%);
+@mediaWidth:0px;
+@red:#f74d4d;
+@red-hover:lighten(@red,10%);
+@blue-light:#0C89FC;
+@footer-bgcolor:#3C3C3C;
+@copyright-bgcolor: #333333;
+@white-bg: white;
+@tab-bg: #E5F4FF;
+
+.mixin-scrollbar(){
+    &::-webkit-scrollbar{
+        width: 8px;
+        height: 8px;
+        background: @border-color-base;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #bbb;
+    }    
+}
+
+.mixin-btn{
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background: @primary-color;
+    border: solid 1px transparent;
+    cursor: pointer;
+    &:hover{
+        background: @primary-color-hover;
+    }
+    &[disabled],&[disabled]:hover{
+        cursor: default;
+        opacity: .5;
+        background: @primary-color;
+    }
+    &.btn-ghost{
+        color: @primary-color;
+        background: white;
+        background: transparent;
+        border: solid 1px; 
+        &:hover{
+            color: @primary-color-hover;
+            background: white;
+            background: transparent;
+        }
+        &[disabled],&[disabled]:hover{
+            cursor: default;
+            opacity: .5;
+            color: @primary-color;
+            background: white;
+            background: transparent;
+        }       
+    }
+    &.btn-red{
+        background: @red;
+        &:hover{
+            color: white;
+            background: @red-hover;
+        }
+        &[disabled],&[disabled]:hover{
+            cursor: default;
+            opacity: .5;
+        }
+    }
+    &.btn-green{
+        background: #3fc3a3;
+        &:hover{
+            color: white;
+            background: #4fd1b0;
+        }
+        &[disabled],&[disabled]:hover{
+            cursor: default;
+            opacity: .5;
+        }
+    }
+    &.btn-orange{
+        background: #ff9711;
+        &:hover{
+            color: white;
+            background: #ffab2f;
+        }
+        &[disabled],&[disabled]:hover{
+            cursor: default;
+            opacity: .5;
+        }
+    }
+}
+
+.mixin-b-border(){
+    &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        border-bottom: solid 1px @border-color-base;
+    }
+}
+
+.mixin-t-border(){
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        border-top: solid 1px @border-color-base;
+    }
+    
+}
+
+.mixin-single-line(){
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mixin-multi-line(@lines){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @lines;
+    white-space: normal;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.mixin-slider-box(@scale: 43.33%) {
+    position: relative;
+    padding-bottom: @scale;
+    overflow: hidden;
+    &>img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0;
+    }
+    .swiper-wrapper {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 100%;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

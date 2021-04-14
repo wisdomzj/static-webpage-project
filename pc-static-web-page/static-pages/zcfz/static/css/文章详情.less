@@ -1,0 +1,92 @@
+@import "../common/css/var.less";
+
+.sc-article-detail {
+    background: none;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    min-height: e('calc(100vh - 322px)');
+    .crumb{
+        margin: 0 auto;
+        padding: 16px 0 20px !important;
+        max-width: @docWidth;            
+    }
+    .wrap{
+        margin: 0 auto;
+        max-width: @docWidth;  
+        background: white;
+        overflow: hidden;
+    }
+    h1{
+        padding: 24px 32px 32px;
+        font-size: 24px;
+        text-align: center;
+        span{
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+    }
+    h4{
+        font-size: 14px;
+        line-height: 44px;
+        color: #67727d;
+        text-align: center;
+        background: #eff5fb;
+    }
+    .media-content{
+        margin: 0 32px;
+        overflow: hidden;
+        *:first-child{
+            margin-top: 24px;
+        }
+        p{
+            margin: 24px 16px;
+            line-height: 1.5;
+            text-align: justify;
+            text-indent: 2em;
+            overflow: hidden;
+            img{
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        }
+        .img-box{
+            position: relative;
+            margin: 32px 0 0;
+            &.full-img{
+                img{
+                    width: 100%;
+                }
+            }
+            img{
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    .bottom-nav{
+        margin: 0 auto -52px;
+        max-width: @docWidth;
+        padding: 20px 0;
+        font-size: 0;
+        white-space: nowrap;
+        a{
+            display: inline-block;
+            width: 50%;
+            padding: 20px 0;
+            font-size: 16px;
+            color: @text-light;
+            vertical-align: top;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:hover{
+                color: @primary-color;
+            }
+            &~a{
+                text-align: right;
+            }
+        }
+    }
+}

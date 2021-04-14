@@ -1,0 +1,147 @@
+@import "../common/css/var.less";
+
+.sc-gove {
+    padding-bottom: 0 !important;
+    background: url(../img/banner/banner_gywm.png) no-repeat center;
+    background-size: cover;
+    height: 220px;
+    color: @text-white;
+    .wrapper {
+        position: relative;
+        height: 100%;
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.sc-content {
+    .side-columns{
+        margin: 20px auto 0;
+        font-size: 0;
+        white-space: nowrap;
+        .col-side,.col-content{
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            font-size: 16px;
+        }
+        .col-side{
+            width: 260px;
+            .side-content {
+                -webkit-box-shadow: #E1E1E1 0px 0px 8px;
+                -moz-box-shadow: #E1E1E1 0px 0px 8px;
+                box-shadow: #E1E1E1 0px 0px 8px;
+                border-radius: 8px;
+                padding-bottom: 10px;
+            }
+            h2{
+                padding: 14px 20px;
+                font-size: 22px;
+                color: white;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                border-radius: 8px 8px 0 0; 
+                background: url(../img/side-titbg.png) no-repeat center;
+                background-size: 100% 100%;
+            }
+            ul{
+                margin-top: 10px;
+                border-radius: 0 0 8px 8px;
+                li{
+                    color: @text-light;
+                    position: relative;
+                    text-align: center;
+                    &.active,&:hover{
+                        color: @blue-light;
+                        font-weight: 700;
+                        background: #E5F4FF;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            height: 30px;
+                            width: 4px;
+                            background: @blue-light;
+                        }
+                    }
+                    a{
+                        position: relative;
+                        display: block;
+                        padding: 12px 20px 12px 0;
+                    }
+                }
+            }
+        }
+        .col-content{
+            padding: 0 24px 16px;
+            width: e('calc(100% - 260px)');
+            min-height: 360px;
+            .news-title{
+                position: relative;
+                padding: 16px 0 16px 40px;
+                font-size: 18px;
+                border-bottom: solid 1px @border-color-base;
+                &:first-child{
+                    margin-top: -16px;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -14px;
+                    width: 32px;
+                    height: 32px;
+                    background: url(../../../images/city-station/ningde/title-icon-news.png) no-repeat 0 center;
+                }
+            }
+            .news-list{
+                li{
+                    margin-top: 10px;
+                    font-size: 14px;
+                    border-bottom: dashed 1px @border-color-base;
+                    position: relative;
+                    padding-left: 5px;
+                    &::before {
+                        content: '';
+                        height: 6px;
+                        width: 6px;
+                        background: @text-dark;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 0px;
+                        transform: translateY(-50%);
+                    }
+                    &:hover{
+                        color: @primary-color;
+                    }
+                    a{
+                        position: relative;
+                        display: block;
+                        padding: 10px;
+                        padding-right: 160px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .time{
+                        position: absolute;
+                        right: 0;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

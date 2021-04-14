@@ -1,0 +1,80 @@
+@import "../common/css/var.less";
+
+
+.sc-active {
+    padding-bottom: 0 !important;
+    background: url(../img/banner/banner_active.png) no-repeat center;
+    background-size: cover;
+    height: 360px;
+    color: @text-white;
+    .wrapper {
+        position: relative;
+        height: 100%;
+        .active-box {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 252px;
+            width: 100%;
+            .active-img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                img {
+                    height: 252px;
+                    width: 376px;
+                }
+            }
+            .active-content {
+                position: absolute;
+                top: 0;
+                left: 396px;
+                color: @text-white;
+                width: 750px;
+                h1 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    &.des {
+                        line-height: 1.75;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sc-ccontent {
+    background: white;
+    .wrapper {
+        .sign-box {
+            padding-bottom: 30px;
+            width: 960px;
+            margin: 52px auto 0;
+            border-radius: 4px;
+            -webkit-box-shadow: #E1E1E1 0px 0px 8px;
+            -moz-box-shadow: #E1E1E1 0px 0px 8px;
+            box-shadow: #E1E1E1 0px 0px 8px;
+            .sign-title {
+                height: 55px;
+                width: 327px;
+                margin: 20px auto 50px;
+                background: url(../img/unit-titbg.png) no-repeat center;
+                text-align: center;
+                line-height: 55px;
+                color: @text-white;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .form {
+                margin: 30px auto;
+                width: 710px;
+            }
+        }
+    }
+}

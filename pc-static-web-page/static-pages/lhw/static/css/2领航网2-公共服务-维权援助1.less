@@ -1,0 +1,157 @@
+@import "../common/css/var.less";
+
+.container {
+    .banner {
+        &.h412 .swiper-pagination{
+            bottom: 70px;
+        }
+    }
+}
+
+.sc-content {
+    background: rgb(248, 248, 248);
+    .side-columns {
+        margin: 20px auto 0;
+        font-size: 0;
+        white-space: nowrap;
+        .col-side,
+        .col-content {
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            font-size: 16px;
+        }
+        .col-side {
+            width: 260px;
+            .side-entry {
+                margin-top: 30px;
+                .entry-img {
+                    height: 102px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    img {
+                        border-radius: 8px;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            .side-content {
+                background: @white-bg;
+                -webkit-box-shadow: #E1E1E1 0px 0px 8px;
+                -moz-box-shadow: #E1E1E1 0px 0px 8px;
+                box-shadow: #E1E1E1 0px 0px 8px;
+                padding-bottom: 10px;
+                border-radius: 8px 8px 0 0; 
+            }
+            h2{
+                padding: 14px 20px;
+                font-size: 22px;
+                color: white;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                border-radius: 8px 8px 0 0; 
+                background: url(../img/side-titbg.png) no-repeat center;
+                background-size: 100% 100%;
+            }
+            ul {
+                margin-top: 10px;
+                border-radius: 0 0 8px 8px;
+                li {
+                    color: @text-light;
+                    position: relative;
+                    text-align: left;
+                    &.active,
+                    &:hover {
+                        color: @blue-light;
+                        font-weight: 700;
+                        background: @tab-bg;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            height: 30px;
+                            width: 4px;
+                            background: @blue-light;
+                        }
+                    }
+                    a {
+                        position: relative;
+                        display: block;
+                        padding: 12px 0 12px 70px;
+                    }
+                }
+            }
+        }
+        .col-content {
+            background: @white-bg;
+            padding: 0 0 16px;
+            margin:0 20px;
+            width: e('calc(100% - 260px - 40px)');
+            min-height: 540px;
+            -webkit-box-shadow: #E1E1E1 0px 0px 8px;
+            -moz-box-shadow: #E1E1E1 0px 0px 8px;
+            box-shadow: #E1E1E1 0px 0px 8px;
+            border-radius: 4px;
+            .content-silde-box {
+                .content-title{
+                    font-size: 18px;
+                    padding: 20px;
+                    border-bottom: 1px solid @border-color-base;
+                }
+                .content-article{
+                    padding: 20px;
+                    min-height: 500px;
+                    .p-box {
+                        margin-bottom: 16px;
+                        h2 {
+                            line-height: 32px;
+                        }
+                        p {
+                            line-height: 1.75;
+                        }
+                    }
+                }
+
+                // 服务内容独特样式
+                &.service-con {
+
+                }
+
+                // 援助须知独特样式
+                &.instr-notice {
+
+                }
+
+                // 服务规范独特样式
+                &.service-specif {
+
+                }
+
+                // 受理条件独特样式
+                &.acceptance-cond {
+
+                }
+
+                // 工作流程独特样式
+                &.work-flow {
+
+                }
+
+                // 维权通道独特样式
+                &.protection-channel {
+
+                }
+
+                // 申请表下载独特样式
+                &.apply-dowm {
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,219 @@
+@import '../common/css/var.less';
+
+.sc-content {
+	.side-columns {
+		margin: 20px auto 0;
+		font-size: 0;
+		white-space: nowrap;
+
+		.col-side,
+		.col-content {
+			box-sizing: border-box;
+			display: inline-block;
+			vertical-align: top;
+			white-space: normal;
+			font-size: 16px;
+		}
+		.col-side {
+			width: 260px;
+			.side-title {
+				font-size: 22px;
+				color: white;
+				height: 75px;
+				line-height: 75px;
+				text-align: center;
+				border-radius: 8px 8px 0 0;
+				background: url(../img/side-titbg.png) no-repeat center;
+				background-size: 100% 100%;
+			}
+			.side-content {
+				border: 1px solid #eeeeee;
+				box-shadow: 0 0 2px 0px #eeeeee;
+				background: #ffffff;
+				&:last-child {
+					border-radius: 0 0 8px 8px;
+				}
+				&.close {
+					height: 50px;
+					overflow: hidden;
+					li.active {
+						background: none;
+					}
+					.iconfont.open {
+						display: none;
+					}
+					.iconfont.close {
+						display: block;
+					}
+				}
+				h2 {
+					padding: 12px 20px;
+					font-weight: 500;
+					font-size: 18px;
+					.iconfont {
+						float: right;
+						line-height: 25px;
+						cursor: pointer;
+						&.close {
+							display: none;
+						}
+					}
+				}
+				ul {
+					border-radius: 0 0 8px 8px;
+					li {
+						color: @text-light;
+						position: relative;
+						text-align: left;
+						&.active,
+						&:hover {
+							color: @blue-light;
+							font-weight: 700;
+							background: #e5f4ff;
+							&::before {
+								content: '';
+								position: absolute;
+								top: 50%;
+								left: 0;
+								transform: translateY(-50%);
+								height: 36px;
+								width: 4px;
+								background: @blue-light;
+							}
+						}
+						a {
+							position: relative;
+							display: block;
+							padding: 12px 20px;
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
+		.col-content {
+			width: 880px;
+			min-height: 734px;
+			background: #ffffff;
+			margin-left: 24px;
+			border-radius: 10px;
+			box-shadow: 0 0 2px #f7f7f7;
+			.search {
+				margin-left: 20px;
+				padding-bottom: 24px;
+				margin-right: 34px;
+				border-bottom: 1px dashed #dddddd;
+				h2 {
+					font-weight: 500;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+				form {
+					.item {
+						display: inline-flex;
+						flex-direction: column;
+						span {
+							margin-bottom: 10px;
+							color: #818181;
+						}
+						input {
+							border: 1px solid #e3e3e3;
+							border-radius: 2px;
+							height: 32px;
+							padding: 4px 8px; 
+						}
+						input[name='name'] {
+							width: 150px;
+						}
+						input[name='tel'],
+						input[name='idCard'] {
+							width: 200px;
+						}
+						button {
+							width: 100px;
+							height: 42px;
+							border-radius: 2px;
+							padding: 4px 8px; 
+							font-size: 16px;
+						}
+						button[type='submit'] {
+							background: #0086f9;
+							color: #ffffff;
+							border: none;
+						}
+						button[type='reset'] {
+							background: #ffffff;
+							color: #5b5b5b;
+							border: 2px solid #e3e3e3;
+						}
+					}
+				}
+			}
+			.result {
+				margin-left: 20px;
+				h2 {
+					font-weight: 500;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+				.timeLine {
+					margin-left: 14px;
+					.timeLine-item {
+						display: inline-flex;
+						align-items: center;
+						position: relative;
+						padding-bottom: 16px;
+						.dot {
+							width: 14px;
+							height: 14px;
+							background-color: #ffffff;
+							border: 2px solid #f1f1f1;
+							border-radius: 50%;
+						}
+						.date {
+							margin: 0 10px;
+							color: #666666;
+						}
+						.content {
+							padding: 12px 0 12px 12px;
+							background: #fafafa;
+							color: #666666;
+							width: 480px;
+							border: 1px solid #eeeeee;
+							border-radius: 5px;
+							.mixin-single-line;
+						}
+					}
+					.timeLine-item::after {
+						content: '';
+						position: absolute;
+						top: 34px;
+						left: 8px;
+						height: 50px;
+						border-left: 2px solid #dddddd;
+					}
+					.timeLine-item.active {
+						.dot {
+							background-color: #1985ea;
+							border-color: #1985ea;
+						}
+					}
+					.timeLine-item:last-child::after {
+						content: none;
+					}
+				}
+				.timeLine.desc {
+					display: flex;
+					flex-direction: column;
+				}
+				.timeLine.asc {
+					display: flex;
+					flex-direction: column-reverse;
+					.timeLine-item::after {
+						top: -34px;
+					}
+				}
+			}
+		}
+	}
+}

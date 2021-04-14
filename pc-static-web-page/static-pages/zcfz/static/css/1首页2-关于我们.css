@@ -1,0 +1,413 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.pos-msg {
+  height: 118px;
+  width: 310px;
+  background-size: cover;
+  padding: 16px;
+}
+.pos-msg .p-sty {
+  font-size: 14px;
+  line-height: 36px;
+}
+.pos-msg .p-sty img {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.pos-msg .p-sty.address img {
+  height: 16px;
+  width: 13px;
+  margin-right: 10px;
+}
+.pos-msg .p-sty.phone img {
+  height: 21px;
+  width: 21px;
+  left: -2px;
+}
+.pos-msg .p-sty.email img {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+.anchorBL {
+  display: none;
+}
+.sc-about-us {
+  padding-bottom: 0 !important;
+  background: url(../img/banner/banner_gywm-us.png) no-repeat center;
+  background-size: cover;
+  height: 220px;
+  color: #fff;
+}
+.sc-about-us h1 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+.sc-about-us p {
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.sc-content .duty {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.sc-content .duty .duty-tit {
+  height: 55px;
+  width: 327px;
+  margin: 0 auto;
+  background: url(../img/unit-titbg.png) no-repeat center;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.sc-content .duty .duty-desc {
+  font-size: 16px;
+  padding: 20px 30px;
+}
+.sc-content .duty .duty-desc p {
+  padding: 10px 0;
+  line-height: 1.75;
+}
+.sc-contact1 .contact-tit {
+  padding: 50px 0 30px;
+}
+.sc-contact1 .contact-tit img {
+  height: 30px;
+  width: 100%;
+}
+.sc-contact1 .contact-con {
+  position: relative;
+  height: 476px;
+}
+.sc-contact1 .contact-con .con-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 620px;
+}
+.sc-contact1 .contact-con .con-left .map-area {
+  height: 100%;
+  width: 100%;
+}
+.sc-contact1 .contact-con .con-right {
+  position: absolute;
+  top: 0;
+  left: 670px;
+  right: 0;
+  width: 412px;
+  height: 100%;
+}
+.sc-contact1 .contact-con .con-right .way {
+  padding-left: 12px;
+}
+.sc-contact1 .contact-con .con-right .way p {
+  line-height: 28px;
+  font-size: 14px;
+}
+.sc-contact1 .contact-con .con-right .msg .sign-box .sign-title {
+  height: 36px;
+  width: 396px;
+  line-height: 36px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sc-contact1 .contact-con .con-right .msg .sign-box .sign-title h1 {
+  padding: 10px 0 0 12px;
+}
+.sc-contact1 .contact-con .con-right .msg .sign-box .form {
+  margin: 20px auto;
+  width: 396px;
+}
+.sc-contact1 .contact-con .con-right .msg .sign-box .form .btn-box {
+  margin: 0 auto;
+  width: 378px;
+}
+.sc-contact1 .contact-con .con-right .msg .sign-box .form .btn-box button {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  border: none;
+  margin-bottom: 10px;
+}
+.sc-contact1 .contact-con .con-right .msg .sign-box .form .btn-box button.active,
+.sc-contact1 .contact-con .con-right .msg .sign-box .form .btn-box button:hover {
+  color: #fff;
+  background: #0C89FC;
+}
+.sc-contact2 {
+  position: relative;
+  padding-bottom: 0 !important;
+}
+.sc-contact2 .contact-tit {
+  padding: 50px 0 30px;
+  height: 30px;
+}
+.sc-contact2 .contact-tit .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sc-contact2 .contact-tit .wrapper img {
+  height: 30px;
+  width: 100%;
+}
+.sc-contact2 .map-box {
+  width: 100%;
+  height: 560px;
+  position: relative;
+}
+.sc-contact2 .map-box .map-area {
+  height: 100%;
+  width: 100%;
+  background: url(../img/contact_map.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.sc-contact2 .map-box .map-area .pos-pop {
+  position: absolute;
+  top: 194px;
+  left: 188px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-msg {
+  height: 118px;
+  width: 310px;
+  background: url(../img/dialog_bg.png) no-repeat center;
+  background-size: cover;
+  padding: 16px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-msg .p-sty {
+  font-size: 14px;
+  line-height: 36px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-msg .p-sty img {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-msg .p-sty.address img {
+  height: 16px;
+  width: 13px;
+  margin-right: 10px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-msg .p-sty.phone img {
+  height: 21px;
+  width: 21px;
+  left: -2px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-msg .p-sty.email img {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-flag {
+  height: 40px;
+  width: 32px;
+  margin: 6px auto 0;
+}
+.sc-contact2 .map-box .map-area .pos-pop .pos-flag img {
+  height: 100%;
+  width: 100%;
+}
+.sc-contact2 .map-box .us-from {
+  z-index: 1900;
+  position: absolute;
+  top: 50%;
+  right: 75px;
+  transform: translateY(-50%);
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: white;
+}
+.sc-contact2 .map-box .us-from .sign-title {
+  height: 36px;
+  width: 396px;
+  line-height: 36px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sc-contact2 .map-box .us-from .sign-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0 0 12px;
+}
+.sc-contact2 .map-box .us-from .form {
+  margin: 20px auto;
+  width: 396px;
+}
+.sc-contact2 .map-box .us-from .form .btn-box {
+  margin: 0 auto;
+  width: 378px;
+}
+.sc-contact2 .map-box .us-from .form .btn-box button {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  border: none;
+  margin-bottom: 10px;
+}
+.sc-contact2 .map-box .us-from .form .btn-box button.active,
+.sc-contact2 .map-box .us-from .form .btn-box button:hover {
+  color: #fff;
+  background: #0C89FC;
+}
+.sc-contact3 {
+  position: relative;
+  padding-bottom: 0 !important;
+}
+.sc-contact3 .contact-tit {
+  padding: 50px 0 30px;
+  height: 30px;
+}
+.sc-contact3 .contact-tit .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.sc-contact3 .contact-tit .wrapper img {
+  height: 30px;
+  width: 100%;
+}
+.sc-contact3 .map-box {
+  width: 100%;
+  height: 560px;
+  position: relative;
+}
+.sc-contact3 .map-box .map-area {
+  height: 660px;
+  width: 3000px;
+  position: absolute;
+  top: 0;
+  left: -1148px;
+}
+.sc-contact3 .map-box .us-from {
+  z-index: 1900;
+  position: absolute;
+  top: 50%;
+  right: 75px;
+  transform: translateY(-50%);
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: white;
+}
+.sc-contact3 .map-box .us-from .sign-title {
+  height: 36px;
+  width: 396px;
+  line-height: 36px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sc-contact3 .map-box .us-from .sign-title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0 0 12px;
+}
+.sc-contact3 .map-box .us-from .form {
+  margin: 20px auto;
+  width: 396px;
+}
+.sc-contact3 .map-box .us-from .form .btn-box {
+  margin: 0 auto;
+  width: 378px;
+}
+.sc-contact3 .map-box .us-from .form .btn-box button {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  border: none;
+  margin-bottom: 10px;
+}
+.sc-contact3 .map-box .us-from .form .btn-box button.active,
+.sc-contact3 .map-box .us-from .form .btn-box button:hover {
+  color: #fff;
+  background: #0C89FC;
+}

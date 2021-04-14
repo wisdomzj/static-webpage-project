@@ -1,0 +1,183 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.sc-content .side-columns {
+  margin: 20px auto 0;
+  font-size: 0;
+  white-space: nowrap;
+}
+.sc-content .side-columns .col-side,
+.sc-content .side-columns .col-content {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  font-size: 16px;
+}
+.sc-content .side-columns .col-side {
+  width: 260px;
+}
+.sc-content .side-columns .col-side .side-title {
+  font-size: 22px;
+  color: white;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  background: url(../img/side-titbg.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.sc-content .side-columns .col-side .side-content {
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 2px 0px #eeeeee;
+  background: #ffffff;
+}
+.sc-content .side-columns .col-side .side-content:last-child {
+  border-radius: 0 0 8px 8px;
+}
+.sc-content .side-columns .col-side .side-content.close {
+  height: 50px;
+  overflow: hidden;
+}
+.sc-content .side-columns .col-side .side-content.close li.active {
+  background: none;
+}
+.sc-content .side-columns .col-side .side-content.close .iconfont.open {
+  display: none;
+}
+.sc-content .side-columns .col-side .side-content.close .iconfont.close {
+  display: block;
+}
+.sc-content .side-columns .col-side .side-content h2 {
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.sc-content .side-columns .col-side .side-content h2 .iconfont {
+  float: right;
+  line-height: 25px;
+  cursor: pointer;
+}
+.sc-content .side-columns .col-side .side-content h2 .iconfont.close {
+  display: none;
+}
+.sc-content .side-columns .col-side .side-content ul {
+  border-radius: 0 0 8px 8px;
+}
+.sc-content .side-columns .col-side .side-content ul li {
+  color: #999;
+  position: relative;
+  text-align: left;
+}
+.sc-content .side-columns .col-side .side-content ul li.active,
+.sc-content .side-columns .col-side .side-content ul li:hover {
+  color: #0C89FC;
+  font-weight: 700;
+  background: #e5f4ff;
+}
+.sc-content .side-columns .col-side .side-content ul li.active::before,
+.sc-content .side-columns .col-side .side-content ul li:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 36px;
+  width: 4px;
+  background: #0C89FC;
+}
+.sc-content .side-columns .col-side .side-content ul li a {
+  position: relative;
+  display: block;
+  padding: 12px 20px;
+  margin-left: 20px;
+}
+.sc-content .side-columns .col-content {
+  width: 880px;
+  min-height: 734px;
+  background: #ffffff;
+  margin-left: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #f7f7f7;
+}
+.sc-content .side-columns .col-content h2 {
+  padding: 20px;
+}
+.sc-content .side-columns .col-content h2 a {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #0086f9;
+  border-radius: 2px;
+  background: #0086f9;
+  color: #f8fcff;
+  text-align: center;
+}

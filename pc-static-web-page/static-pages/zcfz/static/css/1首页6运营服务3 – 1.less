@@ -1,0 +1,127 @@
+@import "../common/css/var.less";
+
+.sc-operate {
+    padding-bottom: 0 !important;
+    background: url(../img/banner/banner_gywm.png) no-repeat center;
+    background-size: cover;
+    height: 220px;
+    color: @text-white;
+    .wrapper {
+        position: relative;
+        height: 100%;
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.sc-content {
+    .content{
+        margin-top: 32px;
+        padding: 0 24px;
+        background: white;
+        overflow: hidden;
+        .tab-con {
+            padding: 20px 0;
+            .tab-con-img {
+                margin: 0 auto;
+                width: 660px;
+                height: 64px;
+                li {
+                    float: left;
+                    margin-left: 20px; 
+                    height: 64px;
+                    width: 300px;
+                    line-height: 64px;
+                    color: #0086F9;
+                    cursor: pointer;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-left: 110px;
+                    }
+                    &.pre-org {
+                        background: url(../img/preorg-nocheckbg.png) no-repeat center;
+                        &:hover,
+                        &.active {
+                            background: url(../img/preorg-checkbg.png) no-repeat center;
+                            color: #FFF3A5;
+                        }
+                    }
+                    &.check-org {
+                        background: url(../img/checkorg-nocheckbg.png) no-repeat center;
+                        &:hover,
+                        &.active {
+                            background: url(../img/checkorg-checkbg.png) no-repeat center;
+                            color: #FFF3A5;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .expert-list{
+            margin-top: 10px;
+            td:first-child:after{
+                left: 0;
+            }
+            td:last-child:after{
+                right: 0;
+            }
+
+            table{
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 14px;
+                text-align: center;
+                color: @text-normal;
+                th{
+                    padding: 12px 8px;
+                    font-size: 18px;
+                    color: #687f99;
+                    white-space: nowrap;
+                    background: #d6ecf7;
+                }
+                td{
+                    position: relative;
+                    padding: 16px 20px;
+                    white-space: nowrap;
+                    &.is-link,
+                    a:not(.btn){
+                        color: @primary-color;
+                        cursor: pointer;
+                        &:hover{
+                            color: @primary-color-hover;
+                        }
+                    }
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-bottom: dashed 1px @border-color-base;
+                    }
+                    &:first-child:after{
+                        left: 24px;
+                    }
+                    &:last-child:after{
+                        right: 24px;
+                    }
+                    p{
+                        display: inline-block;
+                        white-space: normal;
+                        vertical-align: top;
+                        word-break: break-word;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+@import "../common/css/var.less";
+
+.sc-content {
+    .side-columns{
+        margin: 20px auto 0;
+        font-size: 0;
+        white-space: nowrap;
+        .col-side,.col-content{
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal;
+            font-size: 16px;
+        }
+        .col-side{
+            width: 260px;
+            .side-entry {
+                margin-top: 30px;
+                .entry-img {
+                    height: 102px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    img {
+                        border-radius: 8px;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            .side-content {
+                -webkit-box-shadow: #E1E1E1 0px 0px 8px;
+                -moz-box-shadow: #E1E1E1 0px 0px 8px;
+                box-shadow: #E1E1E1 0px 0px 8px;
+                padding-bottom: 10px;
+            }
+            h2{
+                padding: 14px 20px;
+                font-size: 22px;
+                color: white;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                border-radius: 8px 8px 0 0; 
+                background: url(../img/side-titbg.png) no-repeat center;
+                background-size: 100% 100%;
+            }
+            ul{
+                margin-top: 10px;
+                border-radius: 0 0 8px 8px;
+                li{
+                    color: @text-light;
+                    position: relative;
+                    text-align: center;
+                    &.active,&:hover{
+                        color: @blue-light;
+                        font-weight: 700;
+                        background: @tab-bg;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            height: 30px;
+                            width: 4px;
+                            background: @blue-light;
+                        }
+                    }
+                    a{
+                        position: relative;
+                        display: block;
+                        padding: 12px 20px 12px 0;
+                    }
+                }
+            }
+        }
+        .col-content{
+            padding: 0 24px 16px;
+            width: e('calc(100% - 260px)');
+            min-height: 360px;
+            .news-title{
+                position: relative;
+                padding: 16px 0 16px 40px;
+                font-size: 18px;
+                border-bottom: solid 1px @border-color-base;
+                &:first-child{
+                    margin-top: -16px;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    margin-top: -14px;
+                    width: 32px;
+                    height: 32px;
+                    background: url(../../../images/city-station/ningde/title-icon-news.png) no-repeat 0 center;
+                }
+            }
+            .news-list{
+                li{
+                    height: 250px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    .seek-left {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 250px;
+                        width: 376px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .seek-right {
+                        position: absolute;
+                        top: 0;
+                        left: 400px;
+                        height: 250px;
+                        h1 {
+                            font-size: 18px;
+                            font-weight: bold;
+                            line-height: 28px;
+                            width: 99.99%;
+                            .mixin-single-line();
+                        }
+                        .seek-right-detail {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            overflow: auto;
+                            margin-bottom: 15px;
+                            height: 150px;
+                            .mixin-scrollbar();over
+                            p {
+                                line-height: 28px;
+                                font-size: 14px;
+                                &.des {
+                                    line-height: 1.75;
+                                }
+                            }
+                        }
+                        .go-sign {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            .sing-btn {
+                                display: block;
+                                height: 36px;
+                                width: 110px;
+                                background: #0086F9;
+                                line-height: 36px;
+                                text-align: center;
+                                color: @text-white;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

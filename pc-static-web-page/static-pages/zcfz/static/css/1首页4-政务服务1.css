@@ -1,0 +1,200 @@
+.mixin-btn {
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  background: #4169dc;
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+.mixin-btn:hover {
+  background: #6c8be4;
+}
+.mixin-btn[disabled],
+.mixin-btn[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  background: #4169dc;
+}
+.mixin-btn.btn-ghost {
+  color: #4169dc;
+  background: white;
+  background: transparent;
+  border: solid 1px;
+}
+.mixin-btn.btn-ghost:hover {
+  color: #6c8be4;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-ghost[disabled],
+.mixin-btn.btn-ghost[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+  color: #4169dc;
+  background: white;
+  background: transparent;
+}
+.mixin-btn.btn-red {
+  background: #f74d4d;
+}
+.mixin-btn.btn-red:hover {
+  color: white;
+  background: #f97e7e;
+}
+.mixin-btn.btn-red[disabled],
+.mixin-btn.btn-red[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-green {
+  background: #3fc3a3;
+}
+.mixin-btn.btn-green:hover {
+  color: white;
+  background: #4fd1b0;
+}
+.mixin-btn.btn-green[disabled],
+.mixin-btn.btn-green[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.mixin-btn.btn-orange {
+  background: #ff9711;
+}
+.mixin-btn.btn-orange:hover {
+  color: white;
+  background: #ffab2f;
+}
+.mixin-btn.btn-orange[disabled],
+.mixin-btn.btn-orange[disabled]:hover {
+  cursor: default;
+  opacity: 0.5;
+}
+.sc-content .service-entry {
+  margin: 30px auto;
+  width: 1200px;
+  overflow: hidden;
+}
+.sc-content .service-entry ul li {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 20px;
+  font-size: 0;
+  width: 275px;
+  height: 120px;
+}
+.sc-content .service-entry ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.sc-content .service-entry ul a img {
+  height: 100%;
+  width: 100%;
+}
+.sc-content .service-new {
+  height: 320px;
+}
+.sc-content .service-new .new-some {
+  width: 590px;
+  height: 100%;
+  overflow: hidden;
+}
+.sc-content .service-new .new-some .title {
+  height: 42px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.sc-content .service-new .new-some .title.stit {
+  height: 100%;
+  line-height: 42px;
+  text-align: center;
+  color: #333;
+}
+.sc-content .service-new .new-some .title p {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-bottom: 2px solid #0090FF;
+}
+.sc-content .service-new .new-some .title a {
+  padding: 8px 10px;
+  display: block;
+  font-size: 14px;
+  float: right;
+}
+.sc-content .service-new .new-some ul {
+  margin-top: 20px;
+}
+.sc-content .service-new .new-some ul li {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sc-content .service-new .new-some ul li p.psty-left {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  float: left;
+  width: 500px;
+}
+.sc-content .service-new .new-some ul li p.psty-right {
+  float: right;
+  color: #999;
+}
+.sc-content .service-new .service-new-left {
+  float: left;
+}
+.sc-content .service-new .service-new-right {
+  float: right;
+}
+.sc-content .service-declare {
+  margin-top: 20px;
+}
+.sc-content .service-declare .declare-title {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: 700px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+.sc-content .service-declare .declare-title img {
+  position: relative;
+  top: 5px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+}
+.sc-content .service-declare .rep-box {
+  margin-bottom: 20px;
+  height: 42px;
+  line-height: 42px;
+}
+.sc-content .service-declare .rep-box .declare-tab {
+  float: left;
+  margin: 0;
+}
+.sc-content .service-declare .rep-box .declare-tab li.rep-item {
+  margin-left: 10px;
+  height: 36px;
+  width: 78px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 18px;
+  color: #333;
+  display: inline-block;
+}
+.sc-content .service-declare .rep-box .declare-tab li.rep-item:hover,
+.sc-content .service-declare .rep-box .declare-tab li.rep-item.active {
+  color: #fff;
+  background: #0086F9;
+}
+.sc-content .service-declare .rep-box .rep-more {
+  float: right;
+  font-size: 14px;
+}

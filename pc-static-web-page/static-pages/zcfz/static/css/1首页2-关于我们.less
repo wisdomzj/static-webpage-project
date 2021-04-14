@@ -1,0 +1,374 @@
+@import "../common/css/var.less";
+
+
+.pos-msg {
+    height: 118px;
+    width: 310px;
+    background-size: cover;
+    padding: 16px;
+    .p-sty {
+        font-size: 14px;
+        line-height: 36px;
+        img {
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+            top: 4px;
+        }
+
+        &.address {
+            img {
+                height: 16px;
+                width: 13px;
+                margin-right: 10px;
+            }
+        }
+
+        &.phone {
+            img {
+                height: 21px;
+                width: 21px;
+                left: -2px;
+            }
+        }
+
+        &.email {
+            img {
+                height: 16px;
+                width: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.anchorBL {
+    display: none;
+}
+
+
+.sc-about-us {
+    padding-bottom: 0 !important;
+    background: url(../img/banner/banner_gywm-us.png) no-repeat center;
+    background-size: cover;
+    height: 220px;
+    color: @text-white;
+    h1 {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        margin: 40px 0 20px 0;
+    }
+    p {
+        text-indent: 2em;
+        font-size: 16px;
+        line-height: 1.75;
+    }
+}
+
+.sc-content {
+    .duty {
+        border: 1px solid @border-color-base;
+        border-radius: 8px; 
+        margin-top: 20px;
+        .duty-tit {
+            height: 55px;
+            width: 327px;
+            margin: 0 auto;   
+            background: url(../img/unit-titbg.png) no-repeat center;
+            text-align: center;
+            line-height: 55px;
+            color: @text-white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .duty-desc {
+            font-size: 16px;
+            padding: 20px 30px;
+            p {
+                padding: 10px 0;
+                line-height: 1.75;
+            }
+        }
+    }
+}
+
+.sc-contact1 {
+    .contact-tit {
+        padding: 50px 0 30px;
+        img {
+            height: 30px;
+            width: 100%;
+        }
+    }
+    .contact-con {
+        position: relative;
+        height: 476px;
+        .con-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 620px;
+            .map-area {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .con-right {
+            position: absolute;
+            top: 0;
+            left: 670px;
+            right: 0;
+            width: 412px;
+            height: 100%;
+            .way {
+                padding-left: 12px;
+                p {
+                    line-height: 28px;
+                    font-size: 14px;
+                }
+            }
+            .msg {
+                .sign-box {
+                    .sign-title {
+                        height: 36px;
+                        width: 396px;
+                        line-height: 36px;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                        h1 {
+                            padding: 10px 0 0 12px;
+                        }
+                    }
+                    .form {
+                        margin: 20px auto;
+                        width: 396px;
+                        .btn-box {
+                            margin: 0 auto;
+                            width: 378px;
+                            button {
+                                height: 40px;
+                                width: 100%;
+                                line-height: 40px;
+                                text-align: center;
+                                border-radius: 4px;
+                                color: @text-dark;
+                                font-size: 14px;
+                                border: none;
+                                margin-bottom: 10px;
+                                &.active, &:hover {
+                                    color: @text-white;
+                                    background: @blue-light;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sc-contact2 {
+    position: relative;
+    padding-bottom: 0 !important;
+    .contact-tit {
+        padding: 50px 0 30px;
+        height: 30px;
+        .wrapper {
+            width: @docWidth;
+            margin: 0 auto;
+            img {
+                height: 30px;
+                width: 100%;
+            }
+        }
+    }
+    .map-box {
+        width: 100%;
+        height: 560px;
+        position: relative; 
+        .map-area {
+            height: 100%;
+            width: 100%;
+            background: url(../img/contact_map.png) no-repeat center;
+            background-size: cover;
+            position: relative;
+            .pos-pop {
+                position: absolute;
+                top: 194px;
+                left: 188px;
+                .pos-msg {
+                    height: 118px;
+                    width: 310px;
+                    background: url(../img/dialog_bg.png) no-repeat center;
+                    background-size: cover;
+                    padding: 16px;
+                    .p-sty {
+                        font-size: 14px;
+                        line-height: 36px;
+                        img {
+                            display: inline-block;
+                            margin-right: 5px;
+                            position: relative;
+                            top: 4px;
+                        }
+
+                        &.address {
+                            img {
+                                height: 16px;
+                                width: 13px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        &.phone {
+                            img {
+                                height: 21px;
+                                width: 21px;
+                                left: -2px;
+                            }
+                        }
+
+                        &.email {
+                            img {
+                                height: 16px;
+                                width: 16px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .pos-flag {
+                    height: 40px;
+                    width: 32px;
+                    margin: 6px auto 0;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }  
+        .us-from {
+            z-index: 1900;
+            position: absolute;
+            top: 50%;
+            right: 75px;
+            transform: translateY(-50%);
+            padding: 16px 32px;
+            border-radius: 12px;
+            background: @white-bg;
+            .sign-title {
+                height: 36px;
+                width: 396px;
+                line-height: 36px;
+                font-size: 18px;
+                margin-bottom: 20px;
+                h1 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 10px 0 0 12px;
+                }
+            }
+            .form {
+                margin: 20px auto;
+                width: 396px;
+                .btn-box {
+                    margin: 0 auto;
+                    width: 378px;
+                    button {
+                        height: 40px;
+                        width: 100%;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 4px;
+                        color: @text-dark;
+                        font-size: 14px;
+                        border: none;
+                        margin-bottom: 10px;
+                        &.active, &:hover {
+                            color: @text-white;
+                            background: @blue-light;
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}
+
+.sc-contact3 {
+    position: relative;
+    padding-bottom: 0 !important;
+    .contact-tit {
+        padding: 50px 0 30px;
+        height: 30px;
+        .wrapper {
+            width: @docWidth;
+            margin: 0 auto;
+            img {
+                height: 30px;
+                width: 100%;
+            }
+        }
+    }
+    .map-box {
+        width: 100%;
+        height: 560px;
+        position: relative; 
+        .map-area {
+            height: 660px;
+            width: 3000px;
+            position: absolute;
+            top: 0;
+            left: -1148px;
+        }  
+        .us-from {
+            z-index: 1900;
+            position: absolute;
+            top: 50%;
+            right: 75px;
+            transform: translateY(-50%);
+            padding: 16px 32px;
+            border-radius: 12px;
+            background: @white-bg;
+            .sign-title {
+                height: 36px;
+                width: 396px;
+                line-height: 36px;
+                font-size: 18px;
+                margin-bottom: 20px;
+                h1 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 10px 0 0 12px;
+                }
+            }
+            .form {
+                margin: 20px auto;
+                width: 396px;
+                .btn-box {
+                    margin: 0 auto;
+                    width: 378px;
+                    button {
+                        height: 40px;
+                        width: 100%;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 4px;
+                        color: @text-dark;
+                        font-size: 14px;
+                        border: none;
+                        margin-bottom: 10px;
+                        &.active, &:hover {
+                            color: @text-white;
+                            background: @blue-light;
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}
